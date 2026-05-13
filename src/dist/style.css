@@ -378,8 +378,33 @@ a {
 .header .navbar .logoText ul li span:hover {
   background-color: #676767;
 }
+.header .navbar .logoText ul li span i {
+  font-size: 20px;
+}
+.header .navbar .logoText ul .explore {
+  position: relative;
+}
+.header .navbar .logoText ul .modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar .logoText ul .modal .modalBg {
+  width: 1250px;
+  height: 500px;
+  margin-left: 55px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.header .navbar .logoText ul .modal.active {
+  display: block;
+}
 .header .navbar .logoForm {
-  width: 388px;
+  width: 365px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -395,9 +420,6 @@ a {
   outline: none;
   color: #505050;
   font-size: 14px;
-}
-.header .navbar .logoForm i {
-  color: #505050;
 }
 .header .navbar .logoLogin {
   display: flex;
