@@ -1,0 +1,18 @@
+// base
+@use "./base/global";
+@use "./base/reset";
+
+// components
+@use "./components/grid";
+@use "./components/modal";
+
+// layout 
+@use "./layout/cart";
+@use "./layout/footer";
+@use "./layout/header";
+@use "./layout/navbar";
+@use "./layout/sidebar";
+
+// pages
+@use "./pages/about";
+@use "./pages/home";
