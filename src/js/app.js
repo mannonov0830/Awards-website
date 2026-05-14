@@ -5,6 +5,9 @@ let reloadBtn = document.getElementById("reloadBtn")
 let modal = document.getElementById("modal");
 let closeBtn = document.getElementById("closeBtn")
 let btns = document.querySelectorAll(".btnTop")
+let logModal = document.getElementById("log_maodal")
+let logBtn = document.getElementById("overlay")
+let signBtn = document.getElementById("signBtn")
 
 logoReload.addEventListener("click", () => {
     location.reload();
@@ -41,3 +44,17 @@ btns.forEach((btn) => {
 
     });
 });
+
+logModal.addEventListener("click", () => {
+    logBtn.classList.add("show")
+})
+
+signBtn.addEventListener("click", () => {
+    logBtn.classList.add("show")
+})
+
+window.addEventListener("click", (event) => {
+    if (event.target === logBtn) {
+        logBtn.classList.remove("show")
+    }
+})

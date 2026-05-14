@@ -264,6 +264,203 @@
           }
         }
       }
+      // input modal
+      .logMoadal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+
+        width: 400px;
+        padding: 30px;
+
+        background: white;
+        border-radius: 20px;
+
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: 0.3s;
+        z-index: 1000;
+      }
+
+      .logMoadal.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: 0.3s;
+        z-index: 999;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .inputMoadl{
+          width: 800px;
+          height: 500px;
+          background-color: #fff;
+          border-radius: 8px;
+          overflow: hidden;
+          margin-top: 10px;
+          display: flex;
+          .inputImg{
+            width: 400px;
+            height: 100%;
+            background-color: #EDEDED;
+            padding: 20px;
+            h4{
+              font-size: 18px;
+              font-weight: 400;
+              font-family: "Inter Tight",sans-serif;
+
+            }
+            .inputImgflex{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 130px;
+              gap: 10px;
+              img{
+                &:nth-child(1){
+                  width: 80px;
+                }
+              }
+            }
+            p{
+              font-size: 12px;
+              font-weight: 400;
+              font-family: "Inter Tight",sans-serif;
+              margin-top: 150px;
+              color: #000;
+              span{
+                font-weight: 600;
+                border-bottom: 2px solid #dddddd;
+                transition: all 0.3s;
+                cursor: pointer;
+                &:hover{
+                  border-bottom: 2px solid #000;
+                }
+              }
+            }
+
+          }
+          .inputData{
+            width: 400px;
+            height: 100%;
+            padding: 20px;
+            background-color: #fff;
+            padding-left: -10px;
+
+            h4{
+              font-size: 18px;
+              font-weight: 600;
+              font-family: "Inter Tight",sans-serif;
+              color: #222222;
+              margin-bottom: 20px;
+            }
+            label{
+              display: block;
+              font-size: 12px;
+              font-weight: 400;
+              font-family: "Inter Tight",sans-serif;
+              color: #676767;
+              margin-bottom: 6px;
+              margin-top: 10px;
+            }
+            input{
+              border: none;
+              width: 360px;
+              border-bottom: 1px solid #a5a5a5;
+              margin-top: 10px;
+              outline: none;
+              font-size: 15px;
+              padding-left: 5px;
+              padding-bottom: 5px;
+              color: #505050;
+            }
+            h6{
+              font-size: 13px;
+              font-weight: 400;
+              font-family: "Inter Tight",sans-serif;
+              color: #676767;
+              margin-top: 20px;
+              cursor: pointer;
+
+            }
+            button{
+              width: 360px;
+              height: 45px;
+              border: 1px solid #000;
+              border-radius: 8px;
+              background-color: #000;
+              color: #fff;
+              margin-top: 30px;
+              cursor: pointer;
+              transition: all 0.3s;
+              &:hover{
+                background-color: #222222;
+              }
+            }
+            h2{
+              font-size: 11px;
+              font-weight: 600;
+              font-family: "Inter Tight",sans-serif;
+              color: #505050;
+              text-align: end;
+              margin-top: 20px;
+              cursor: pointer;
+            }
+            h1{
+              font-size: 12px;
+              font-weight: 400;
+              font-family: "Inter Tight",sans-serif;
+              color: #505050;
+              margin-top: 80px;
+            }
+            .logingBtn{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              button{
+                background-color: #fff;
+                color: #000;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: "Inetr Tight",sans-serif;
+                margin-top: 0;
+                transition: all 0.3s;
+                cursor: pointer;
+                &:hover{
+                  background-color: #000;
+                  color: #fff;
+                }
+                i{
+                  font-size: 20px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .overlay.show {
+        opacity: 1;
+        visibility: visible;
+      }
     }
+    // input modal
   }
 }
