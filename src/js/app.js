@@ -8,6 +8,8 @@ let btns = document.querySelectorAll(".btnTop")
 let logModal = document.getElementById("log_maodal")
 let logBtn = document.getElementById("overlay")
 let signBtn = document.getElementById("signBtn")
+let SignBtn = document.getElementById("SignBtn")
+let LogBtn = document.getElementById("LogBtn")
 
 logoReload.addEventListener("click", () => {
     location.reload();
@@ -50,6 +52,14 @@ logModal.addEventListener("click", () => {
 })
 
 signBtn.addEventListener("click", () => {
+    logBtn.classList.add("show")
+})
+
+SignBtn.addEventListener("click", () => {
+    logBtn.classList.add("show")
+})
+
+LogBtn.addEventListener("click", () => {
     logBtn.classList.add("show")
 })
 
