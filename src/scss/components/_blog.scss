@@ -1,0 +1,90 @@
+.blog {
+  margin-top: 100px;
+  h4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter Tight", sans-serif;
+    color: #222222;
+  }
+  h1 {
+    font-size: 41px;
+    font-weight: 600;
+    font-family: "Inter Tight", sans-serif;
+    color: #222222;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .blogCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .blogCard {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 410px;
+      height: 420px;
+
+      img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      .blogText {
+        padding: 14px;
+
+        h3 {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1.4;
+          margin-bottom: 10px;
+          width: 300px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.6;
+          color: #666;
+          width: 360px;
+        }
+      }
+    }
+  }
+  .viewText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    h3 {
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Inter Tight", sans-serif;
+      color: #222222;
+    }
+    h5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Inter Tight", sans-serif;
+      color: #222222;
+      border-bottom: 2px solid #d1d1d1;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        border-color: #000;
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}

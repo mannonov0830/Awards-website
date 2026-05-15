@@ -67,4 +67,4 @@ window.addEventListener("click", (event) => {
     if (event.target === logBtn) {
         logBtn.classList.remove("show")
     }
-})
+}) 

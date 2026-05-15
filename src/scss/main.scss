@@ -4,14 +4,14 @@
 
 // components
 @use "./components/grid";
-@use "./components/modal";
+@use "./components/blog";
 
 // layout 
 @use "./layout/cart";
 @use "./layout/footer";
 @use "./layout/header";
 @use "./layout/navbar";
-@use "./layout/sidebar";
+@use "./layout/market";
 
 // pages
 @use "./pages/directory";

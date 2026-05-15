@@ -1,0 +1,108 @@
+.footer {
+  margin-top: 170px;
+  height: 420px;
+  .footerText {
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+    ul {
+      li {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Inter Tight", sans-serif;
+        color: #222222;
+        line-height: 2.4;
+      }
+    }
+    border-bottom: 1px dashed #999;
+    padding-bottom: 40px;
+  }
+  .footer_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Inter Tight", sans-serif;
+        color: #222222;
+        &:nth-child(1) {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    background-color: #4d4d4d;
+    padding: 8px;
+    border-radius: 12px;
+    width: fit-content;
+    font-family: "Inter", sans-serif;
+
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    .nav-logo {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      padding: 17px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 4px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #999;
+          background-color: transparent;
+          padding: 17px 18px;
+          border-radius: 8px;
+          font-size: 14px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          border: 1px solid #999;
+
+          &:hover {
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+
+    .nav-btn {
+      background-color: #e9e9e9;
+      color: #5c5c5c;
+      border: none;
+      padding: 17px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      margin-left: 12px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
