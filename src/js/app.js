@@ -10,6 +10,7 @@ let logBtn = document.getElementById("overlay")
 let signBtn = document.getElementById("signBtn")
 let SignBtn = document.getElementById("SignBtn")
 let LogBtn = document.getElementById("LogBtn")
+let navLogo = document.querySelector(".nav-logo");
 
 logoReload.addEventListener("click", () => {
     location.reload();
@@ -67,4 +68,11 @@ window.addEventListener("click", (event) => {
     if (event.target === logBtn) {
         logBtn.classList.remove("show")
     }
-}) 
+})
+
+
+navLogo.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+  });
+});

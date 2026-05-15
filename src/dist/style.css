@@ -770,7 +770,7 @@ a {
 .footer .nav-container {
   display: flex;
   align-items: center;
-  background-color: #4d4d4d;
+  background-color: #4D4D4D;
   padding: 8px;
   border-radius: 12px;
   width: fit-content;
@@ -800,7 +800,7 @@ a {
 }
 .footer .nav-container .nav-links li a {
   text-decoration: none;
-  color: #999;
+  color: #fff;
   background-color: transparent;
   padding: 17px 18px;
   border-radius: 8px;
@@ -813,7 +813,7 @@ a {
   border: 1px solid #fff;
 }
 .footer .nav-container .nav-btn {
-  background-color: #e9e9e9;
+  background-color: #E9E9E9;
   color: #5c5c5c;
   border: none;
   padding: 17px 20px;
